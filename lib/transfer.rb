@@ -24,6 +24,7 @@ class Transfer
       @sender.deposit( @amount * -1 ) 
       @receiver.deposit( @amount )
       @status = "complete"
+      @receiver.balance 
     end
   end 
 end
