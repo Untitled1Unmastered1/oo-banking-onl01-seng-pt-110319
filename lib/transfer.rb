@@ -22,7 +22,7 @@ class Transfer
       puts "Transaction was already excuted"
     else
       @sender.balance - @amount 
-      @receiver.deposit( @amount )
+      @receiver.deposit + @amount 
       @status = "complete"
     end
   end 
